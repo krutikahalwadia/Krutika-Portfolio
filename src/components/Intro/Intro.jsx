@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import girl from "../../img/girl.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -28,7 +28,7 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Krutika Halwadia</span>
           <span>
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
@@ -39,22 +39,28 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
-        </div>
+  <a href="https://github.com/krutikahalwadia" target="_blank" rel="noopener noreferrer">
+    <img src={Github} alt="GitHub" />
+  </a>
+  <a href="https://linkedin.com/in/krutika-halwadia1" target="_blank" rel="noopener noreferrer">
+    <img src={LinkedIn} alt="LinkedIn" />
+  </a>
+  {/* <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+    <img src={Instagram} alt="Instagram" />
+  </a> */}
+</div>
       </div>
       {/* right image side */}
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={girl} alt="" style={{ width: '198px' }} />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
-          src={glassesimoji}
+          // src={glassesimoji}
           alt=""
         />
 
@@ -75,7 +81,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          {/* <FloatinDiv img={thumbup} text1="Best Design" text2="Award" /> */}
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
